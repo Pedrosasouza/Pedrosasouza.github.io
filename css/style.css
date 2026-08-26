@@ -391,12 +391,18 @@ nav.scrolled {
 /* ── Projects Grid ── */
 .projects-grid {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 1.5rem !important;
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 640px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
