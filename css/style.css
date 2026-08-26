@@ -388,33 +388,29 @@ nav.scrolled {
     color: var(--accent);
 }
 
-/* ── Projects ── */
-.projects-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+/* ── Projects Grid ── */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .project-card {
     background-color: var(--bg-alt);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 2.25rem;
+    padding: 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
     transition: var(--transition);
-}
-
-.project-card.project-featured {
-    border-left: 4px solid var(--accent);
-    background-color: var(--bg-alt);
+    height: 100%;
 }
 
 .project-card:hover {
     border-color: var(--border-hover);
-    transform: translateY(-3px);
-    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
     background-color: var(--bg);
 }
 
@@ -422,21 +418,14 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.project-badge {
-    font-size: 0.55rem;
-    color: var(--accent);
-    background-color: var(--accent-light);
-    padding: 0.35rem 0.65rem;
-    border-radius: 4px;
-    font-weight: 600;
+    gap: 0.75rem;
 }
 
 .project-link {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--text-muted);
     transition: var(--transition);
+    flex-shrink: 0;
 }
 
 .project-link:hover {
@@ -445,7 +434,7 @@ nav.scrolled {
 }
 
 .project-title {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
@@ -459,27 +448,23 @@ nav.scrolled {
     color: var(--accent);
 }
 
-.project-narrative {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.project-narrative p {
-    font-size: 0.92rem;
+.project-description {
+    font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.65;
+    flex-grow: 1;
 }
 
-.project-narrative strong {
+.project-description strong {
     color: var(--text);
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    padding-top: 0.25rem;
+    gap: 0.4rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
 }
 
 .project-tags li {
