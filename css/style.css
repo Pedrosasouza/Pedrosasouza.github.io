@@ -445,10 +445,18 @@ nav.scrolled {
 }
 
 .project-title {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: var(--text);
     letter-spacing: -0.02em;
+}
+
+.project-title a {
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.project-title a:hover {
+    color: var(--accent);
 }
 
 .project-narrative {
@@ -486,33 +494,6 @@ nav.scrolled {
 
 .project-card:hover .project-tags li {
     background-color: var(--bg-alt);
-}
-
-.project-footer {
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border);
-    margin-top: 0.25rem;
-}
-
-.project-action-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text);
-}
-
-.project-action-link i {
-    transition: transform 0.2s ease;
-}
-
-.project-action-link:hover {
-    color: var(--accent);
-}
-
-.project-action-link:hover i {
-    transform: translateX(4px);
 }
 
 /* ── Contact ── */
