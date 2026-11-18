@@ -8,7 +8,10 @@ Repositório do meu site pessoal, onde reúno meus projetos principais, tecnolog
 
 ## Sobre o código
 
-Fiz este site manualmente com **HTML, CSS e JavaScript puros**, sem frameworks ou etapas de build. Para uma página estática de apresentação, preferi manter o código direto, leve e rápido de carregar, além de ter controle total sobre o layout e a responsividade.
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha trajetória acadêmica, projetos e conhecimentos em tecnologia.
+
+O site reúne informações sobre minha formação, experiências em projetos e tecnologias com as quais tenho trabalhado, além de servir como um espaço para compartilhar meu desenvolvimento na área de tecnologia.
+
 
 - `index.html` — estrutura das seções (Sobre, Habilidades, Projetos e Contato)
 - `css/style.css` — estilização, tipografia e responsividade
